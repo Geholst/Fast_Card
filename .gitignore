@@ -130,4 +130,4 @@ dist
 .pnp.*
 
 # testing folder
-*testing
+testing
