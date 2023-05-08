@@ -19,7 +19,20 @@ router.get("/",(req,res)=>{
     })
 });
 
-// Create a new deck
+// Get specific Deck by PK
+router.get("/:id",(req,res)=>{
+    Deck.findByPk(req.params.id).then(deck=>{
+        if(!deck){
+            return res.status(404).json({msg:"No deck with that id exists."})
+        }
+        res.json(deck)
+    }).catch(err=>{
+        console.log(err);
+        res.status(500).json({msg:"ERROR",err})
+    })
+});
+
+// Create a new Deck
 router.post("/", (req, res) => {
     Deck.create({
         name:req.body.name,
