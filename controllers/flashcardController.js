@@ -18,6 +18,19 @@ router.get("/:id",(req,res)=>{
     })
 });
 
+// Get specific Flashcard by ID
+router.get("/:id",(req,res)=>{
+    Flashcard.findByPk(req.params.id).then(card=>{
+        if(!card){
+            return res.status(404).json({msg:"No flashcard with that id exists."})
+        }
+        res.json(card)
+    }).catch(err=>{
+        console.log(err);
+        res.status(500).json({msg:"ERROR",err})
+    })
+});
+
 // Create a new Flashcard
 router.post("/", (req, res) => {
     Flashcard.create({
@@ -27,6 +40,26 @@ router.post("/", (req, res) => {
         DeckId:req.body.DeckId,
     }).then(newCard=>{
         res.json(newCard)
+    }).catch(err=>{
+        console.log(err);
+        res.status(500).json({msg:"ERROR",err})
+    })
+});
+
+// Update a Flashcard by ID TODO: Update box as well?
+router.put("/:id",(req,res)=>{
+    Flashcard.update({
+        name:req.body.name,
+        front:req.body.front,
+        back:req.body.back,
+        tag:req.body.tag,
+    },{
+        where:{id:req.params.id}
+    }).then(editFlashcard=>{
+        if(!editFlashcard[0]){
+            return res.status(404).json({msg:"No flashcard with that id exists."})
+        }
+        res.json(editFlashcard)
     }).catch(err=>{
         console.log(err);
         res.status(500).json({msg:"ERROR",err})
