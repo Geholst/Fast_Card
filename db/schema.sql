@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS fastcard_db;
+CREATE DATABASE fastcard_db;
