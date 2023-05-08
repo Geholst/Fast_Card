@@ -21,7 +21,7 @@ router.get("/",(req,res)=>{
 // Get all Decks from logged in Profile
 router.get("/userdecks",(req,res)=>{
     Deck.findAll({
-        where:{profile_id:req.session.userId},
+        where:{ProfileId:req.session.userId},
         include:[Flashcard]
     }).then(decks=>{
         if(decks.length===0){
