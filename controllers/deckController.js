@@ -3,8 +3,23 @@ const router = express.Router();
 const {Deck, Flashcard, Profile, Box} = require('../models');
 //  api/deck
 
-// Get all Decks from logged in Profile
+// Get all Decks
 router.get("/",(req,res)=>{
+    Deck.findAll({
+        include:[Flashcard]
+    }).then(decks=>{
+        if(decks.length===0){
+            return res.status(404).json({msg:"No decks found."})
+        }
+        res.json(decks)
+    }).catch(err=>{
+        console.log(err);
+        res.status(500).json({msg:"ERROR",err})
+    })
+});
+
+// Get all Decks from logged in Profile
+router.get("/userdecks",(req,res)=>{
     Deck.findAll({
         where:{profile_id:req.session.userId},
         include:[Flashcard]
