@@ -6,7 +6,12 @@ const Profile = require("./Profile");
 Flashcard.belongsTo(Deck);
 Deck.hasMany(Flashcard);
 
+Deck.belongsTo(Profile);
+Profile.hasMany(Deck);
+
 module.exports = {
     Flashcard:Flashcard,
-    Deck:Deck
+    Deck:Deck,
+    Profile:Profile,
+    Box:Box
 }
