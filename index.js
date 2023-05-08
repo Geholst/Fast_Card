@@ -1,9 +1,27 @@
 const path = require('path');
 const express = require('express');
+const routes = require("./controllers")
+
 const exphbs = require('express-handlebars');
+
+const sequelize = require('./config/connection');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+//TODO: secret should be a process.env.
+const sess = {
+  secret: 'Super secret secret',
+  cookie: {
+    maxAge:1000*60*60*2
+  },
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize
+  })
+};
 
 const sequelize = require('./config/config');
 
