@@ -104,10 +104,8 @@ router.post("/login", (req, res) => {
         }
         if(bcrypt.compareSync(req.body.password,selectedProfile.password)){
             console.log(selectedProfile);
-            req.session.save(()=>{
-                req.session.userId = selectedProfile.id;
-                req.session.userName=selectedProfile.username;
-            })
+            req.session.userId = selectedProfile.id;
+            req.session.userName=selectedProfile.username;
           return res.json(selectedProfile);
         } else {
           return res.status(401).json({msg:"Invalid Username/Password"})
