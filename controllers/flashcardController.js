@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {Deck, Flashcard, Box} = require('../models');
+const {Deck, Flashcard} = require('../models');
 //  api/flashcard
 
 // Get all Flashcards from a Deck by Deck ID
@@ -37,6 +37,9 @@ router.post("/", (req, res) => {
         name:req.body.name,
         front:req.body.front,
         back:req.body.back,
+        started:req.body.started,
+        reviewDay:req.body.reviewDay,
+        tag:req.body.tag,
         DeckId:req.body.DeckId,
     }).then(newCard=>{
         res.json(newCard)
