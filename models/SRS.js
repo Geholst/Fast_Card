@@ -13,6 +13,7 @@ class SRS {
     this.startDate = startDate;
     this.today = dayjs().format("dddd").toLocaleLowerCase();
     this.endDate = dayjs(startDate).add(7, "day").format("MM/DD/YYYY");
+    this.deck = [];
     this.box = {
       monday: [],
       tuesday: [],
