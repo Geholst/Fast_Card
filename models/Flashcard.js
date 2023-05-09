@@ -19,6 +19,13 @@ Flashcard.init(
       type: DataTypes.TEXT,
       allowNull: false,
     },
+    started: {
+        type: DataTypes.BOOLEAN,
+        defaultValue:false
+    },
+    reviewDay: {
+        type: DataTypes.STRING
+    },
     tag: {
       type: DataTypes.INTEGER,
     },
