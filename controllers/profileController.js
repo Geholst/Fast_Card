@@ -100,15 +100,17 @@ router.post("/login", (req, res) => {
     })
     .then((selectedProfile) => {
         if(!selectedProfile){
-          return res.status(401).json({msg:"invalid username/password"})
+          return res.status(401).json({msg:"Invalid Username/Password"})
         }
         if(bcrypt.compareSync(req.body.password,selectedProfile.password)){
             console.log(selectedProfile);
-            req.session.userId = selectedProfile.id;
-            req.session.userName=selectedProfile.username;
+            req.session.save(()=>{
+                req.session.userId = selectedProfile.id;
+                req.session.userName=selectedProfile.username;
+            })
           return res.json(selectedProfile);
         } else {
-          return res.status(401).json({msg:"invalid username/password"})
+          return res.status(401).json({msg:"Invalid Username/Password"})
         }
       })
     .catch((err) => {
