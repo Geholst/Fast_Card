@@ -38,9 +38,9 @@ router.get("/:id",(req,res)=>{
 router.post("/", (req, res) => {
     Profile.create({
       username: req.body.username,
-      firstname: req.body.firstname,
-      lastname: req.body.lastname,
-      email: req.body.lastname,
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      email: req.body.email,
       password: req.body.password,
     })
     .then((newProfile) => {
@@ -56,9 +56,9 @@ router.post("/", (req, res) => {
 router.put("/:id",(req,res)=>{
     Profile.update({
         username: req.body.username,
-        firstname: req.body.firstname,
-        lastname: req.body.lastname,
-        email: req.body.lastname,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        email: req.body.email,
         password: req.body.password,
         score: req.body.score
     },{
@@ -104,10 +104,8 @@ router.post("/login", (req, res) => {
         }
         if(bcrypt.compareSync(req.body.password,selectedProfile.password)){
             console.log(selectedProfile);
-            req.session.save(()=>{
-                req.session.userId = selectedProfile.id;
-                req.session.userName=selectedProfile.username;
-            })
+            req.session.userId = selectedProfile.id;
+            req.session.userName=selectedProfile.username;
           return res.json(selectedProfile);
         } else {
           return res.status(401).json({msg:"Invalid Username/Password"})

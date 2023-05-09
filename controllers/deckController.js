@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {Deck, Flashcard, Profile, Box} = require('../models');
+const {Deck, Flashcard, Profile} = require('../models');
 //  api/deck
 
 // Get all Decks
@@ -50,7 +50,6 @@ router.get("/:id",(req,res)=>{
 });
 
 // Create a new Deck
-// TODO: Doesn't include the profile id for some reason.
 router.post("/", (req, res) => {
     Deck.create({
         name:req.body.name,
