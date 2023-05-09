@@ -10,11 +10,11 @@ Deck.init({
     },
     started: {
         type: DataTypes.BOOLEAN,
-        defaultValue: "false"
+        defaultValue:false
     },
     finished: {
         type: DataTypes.BOOLEAN,
-        defaultValue: "false"
+        defaultValue:false
     }
 },{
     sequelize

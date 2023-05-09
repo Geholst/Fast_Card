@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const {Profile,Deck} = require('../models');
+const bcrypt = require("bcrypt");
 //  api/profile
 
 // Get all Profiles
@@ -20,7 +21,9 @@ router.get("/",(req,res)=>{
 
 //Get Specific Profile by ID
 router.get("/:id",(req,res)=>{
-    Profile.findByPk(req.params.id).then(profile=>{
+    Profile.findByPk(req.params.id,{
+        include:[Deck]
+    }).then(profile=>{
         if(!profile){
             return res.status(404).json({msg:"No profile with that id exists."})
         }
@@ -92,17 +95,18 @@ router.delete("/:id",(req,res)=>{
 router.post("/login", (req, res) => {
     Profile.findOne({
       where: {
-        name: req.body.name,
+        username: req.body.username,
       },
     })
-    .then((foundProfile) => {
-        if(!foundProfile){
+    .then((selectedProfile) => {
+        if(!selectedProfile){
           return res.status(401).json({msg:"invalid username/password"})
         }
-        if(bcrypt.compareSync(req.body.password,foundProfile.password)){
-          req.session.userId = foundProfile.id;
-          req.session.userName=foundProfile.username;
-          return res.json(foundProfile);
+        if(bcrypt.compareSync(req.body.password,selectedProfile.password)){
+            console.log(selectedProfile);
+            req.session.userId = selectedProfile.id;
+            req.session.userName=selectedProfile.username;
+          return res.json(selectedProfile);
         } else {
           return res.status(401).json({msg:"invalid username/password"})
         }
