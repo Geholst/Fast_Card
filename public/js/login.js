@@ -12,11 +12,10 @@ loginForm.addEventListener("submit",e=>{
         method:"POST",
         body:JSON.stringify(profileObj),
         headers: {"Content-Type":"application/json"}
-
     }).then(res=>{
         if(res.ok){
        //TODO: This needs to redirect properly
-           location.href = "/"
+           location.href = "/dashboard"
         } else {
             alert(response.statusText)
         }
@@ -39,10 +38,21 @@ signupForm.addEventListener("submit",e=>{
         headers: {"Content-Type":"application/json"}
     }).then(res=>{
         if(res.ok){
+            const loginObj = {
+                username:profileObj.username,
+                password:profileObj.password
+            }
+            fetch("/api/profile/login",{
+                method:"POST",
+                body:JSON.stringify(loginObj),
+                headers: {"Content-Type":"application/json"}
+        }).then(res=>{
+            if(res.ok){
         //TODO: This needs to redirect properly
-           location.href = "/"
+           location.href = "/dashboard"
         } else {
             alert(response.statusText)
-        }
+        }})
+    }
     })
 })

@@ -4,7 +4,7 @@ const {Deck, Flashcard} = require('../models');
 //  api/flashcard
 
 // Get all Flashcards from a Deck by Deck ID
-router.get("/:id",(req,res)=>{
+router.get("/deck/:id",(req,res)=>{
     Flashcard.findAll({
         where:{DeckId:req.params.id},
     }).then(flashcards=>{
