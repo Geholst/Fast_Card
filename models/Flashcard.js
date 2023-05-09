@@ -1,26 +1,31 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
-class Flashcard extends Model {}
+class Flashcard extends Model {
+  
+}
 
-Flashcard.init({
+Flashcard.init(
+  {
     name: {
-        type: DataTypes.STRING,
-        allowNull:false
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     front: {
-        type: DataTypes.TEXT,
-        allowNull:false
+      type: DataTypes.TEXT,
+      allowNull: false,
     },
     back: {
-        type: DataTypes.TEXT,
-        allowNull:false
+      type: DataTypes.TEXT,
+      allowNull: false,
     },
     tag: {
-        type: DataTypes.INTEGER,
+      type: DataTypes.INTEGER,
     },
-},{
-    sequelize
-});
+  },
+  {
+    sequelize,
+  }
+);
 
-module.exports=Flashcard
+module.exports = Flashcard;
