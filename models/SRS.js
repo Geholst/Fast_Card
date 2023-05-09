@@ -6,7 +6,6 @@ const dayjs = require("dayjs");
 
 class SRS {
   constructor(
-    deck,
     startDay = dayjs().format("dddd"),
     startDate = dayjs().format("MM/DD/YYYY")
   ) {
@@ -14,36 +13,36 @@ class SRS {
     this.startDate = startDate;
     this.today = dayjs().format("dddd").toLocaleLowerCase();
     this.endDate = dayjs(startDate).add(7, "day").format("MM/DD/YYYY");
-    this.deck = deck;
     this.box = {
-      monday: ["monday cards"],
-      tuesday: ["tuesday cards"],
-      wednesday: ["wednesday cards"],
-      thursday: ["thursday cards"],
-      friday: ["friday cards"],
-      sunday: ["saturday cards"],
-      saturday: ["sunday cards"],
+      monday: [],
+      tuesday: [],
+      wednesday: [],
+      thursday: [],
+      friday: [],
+      sunday: [],
+      saturday: [],
     };
   }
-  intervalA() {
+  intervalA(flashcard) {
     // I KNOW
     const day = dayjs().add(5, "day").format("dddd").toLocaleLowerCase();
-    return day;
+    this.setDay(day, flashcard);
+    console.log("intervalA: ", this.box.day);
   }
-  intervalB() {
+  intervalB(flashcard) {
     // I FORGOT
     const day = dayjs().add(3, "day").format("dddd").toLocaleLowerCase();
-    return day;
+    this.setDay(day, flashcard);
   }
-  intervalC() {
+  intervalC(flashcard) {
     // I COMPLETELY FORGOT
     const day = dayjs().add(2, "day").format("dddd").toLocaleLowerCase();
-    return day;
+    this.setDay(day, flashcard);
   }
-  intervalD() {
+  intervalD(flashcard) {
     // I HAVE NO IDEA
     const day = dayjs().add(1, "day").format("dddd").toLocaleLowerCase();
-    return day;
+    this.setDay(day, flashcard);
   }
   toMonday(flashcard) {
     this.box.monday.push(flashcard);
@@ -117,6 +116,6 @@ const srs = new SRS();
 // console.log("Interval B: 'I FORGOT' = ", srs.intervalB());
 // console.log("Interval C: 'I COMPLETELY FORGOT' = ", srs.intervalC());
 // console.log("Interval D: 'I HAVE NO IDEA' ", srs.intervalD());
-srs.setDay(srs.intervalA(), "Am I in Saturday?");
+// srs.setDay(srs.intervalA(), "Am I in Saturday?");
 // console.log("Interval A:  'I KNOW' = ", srs);
 console.log("Today: ", srs.getDay());
