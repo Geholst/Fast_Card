@@ -36,7 +36,9 @@ router.get("/userdecks",(req,res)=>{
 
 // Get specific Deck by ID
 router.get("/:id",(req,res)=>{
-    Deck.findByPk(req.params.id).then(deck=>{
+    Deck.findByPk(req.params.id,{
+        include:[Flashcard]
+    }).then(deck=>{
         if(!deck){
             return res.status(404).json({msg:"No deck with that id exists."})
         }
@@ -48,6 +50,7 @@ router.get("/:id",(req,res)=>{
 });
 
 // Create a new Deck
+// TODO: Doesn't include the profile id for some reason.
 router.post("/", (req, res) => {
     Deck.create({
         name:req.body.name,
