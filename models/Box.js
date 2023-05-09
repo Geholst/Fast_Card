@@ -7,30 +7,31 @@
 // and a method to get the box number
 // and a method to get the list of cards
 // and a method to get the number of cards in the box
-
+// added userId to the constructor
 class Box {
-    constructor(boxNumber, cards) {
-        this.boxNumber = boxNumber;
-        this.cards = cards;
-    }
+  constructor(boxNumber, cards, userId) {
+    this.boxNumber = boxNumber;
+    this.cards = cards;
+    this.userId = userId;
+  }
 
-    addCard(card) {
-        this.cards.push(card);
-    }
+  addCard(card) {
+    this.cards.push(card);
+  }
 
-    removeCard(card) {
-        this.cards = this.cards.filter(c => c.id !== card.id);
-    }
+  removeCard(card) {
+    this.cards = this.cards.filter((c) => c.id !== card.id);
+  }
 
-    getBoxNumber() {
-        return this.boxNumber;
-    }
+  getBoxNumber() {
+    return this.boxNumber;
+  }
 
-    getCards() {
-        return this.cards;
-    }
+  getCards() {
+    return this.cards;
+  }
 
-    getNumberOfCards() {
-        return this.cards.length;
-    }
+  getNumberOfCards() {
+    return this.cards.length;
+  }
 }
