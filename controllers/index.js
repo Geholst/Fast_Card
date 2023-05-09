@@ -6,7 +6,11 @@ const deckRoutes = require("./deckController");
 const flashcardRoutes = require("./flashcardController");
 
 router.get("/",(req,res)=>{
-    res.send("Homepage")
+    res.send("login")
+})
+
+router.get("/dashboard", (req,res)=>{
+    res.send("dashboard")
 })
 
 router.use("/api/profile", profileRoutes);
