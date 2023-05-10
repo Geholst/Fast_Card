@@ -1,8 +1,14 @@
-const router = require("express").Router()
-// const apiRoutes = require("./api")
-const frontendRoutes = require("./frontendRoutes")
+const express = require('express');
+const router = express.Router();
 
-// router.use("/api", apiRoutes)
-router.use("/", frontendRoutes)
+const profileRoutes = require("./profileController");
+const deckRoutes = require("./deckController");
+const flashcardRoutes = require("./flashcardController");
+const frontendRoutes = require("./frontendRoutes");
 
-module.exports = router
+router.use("/api/profile", profileRoutes);
+router.use("/api/deck", deckRoutes);
+router.use("/api/flashcard", flashcardRoutes);
+router.use("/", frontendRoutes);
+
+module.exports=router;
