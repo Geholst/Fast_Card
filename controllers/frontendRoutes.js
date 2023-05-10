@@ -31,7 +31,7 @@ router.get("/dashboard", async (req,res) => {
     })
     const profile = profileData.get({plain: true})
     console.log(profile)
-    return res.render("dashboard", profile)
+    return res.render("dashboard", {user: profile})
   } catch (err) {
     console.log(err)
     res.status(500).json({ msg: "ERROR", err });
@@ -65,6 +65,27 @@ router.get("/signup", async (req,res) => {
       console.log(err)
       res.status(500).json({ msg: "ERROR", err });
     }
+})
+
+// Route to render the new flashcard screen
+router.get("/newfc", async (req,res) => {
+  try {
+    if (!req.session.userId) {
+      res.redirect("/login")
+    }
+    const profileData = await Profile.findByPk(req.session.userId, {
+      include: {
+        all: true,
+        nested: true
+      }
+    })
+    const profile = profileData.get({plain: true})
+    console.log(profile)
+    return res.render("dashboard", {user: profile})
+  } catch (err) {
+    console.log(err)
+    res.status(500).json({ msg: "ERROR", err });
+  }
 })
 
 module.exports = router
