@@ -1,0 +1,23 @@
+#flashcard{
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    border: 2px solid black;
+    height: 300px;
+    width: 200px;
+}
+#interval-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    margin: 5px;
+}
+#a, #b, #c, #d{
+    background-color: white;
+    border: 1px solid black;
+    width: 30px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
