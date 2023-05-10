@@ -1,9 +1,15 @@
 const express = require('express')
+const router = require("express").Router()
 const app = express()
 
 // respond with "hello world" when a GET request is made to the homepage
-app.get('/', (req, res) => {
-  res.send('hello world')
+router.get('/', (req, res) => {
+  res.render('main', {layout: 'index'})
+})
+
+
+router.get("/login", async (req,res) => {
+      res.render("login", {layout: 'index'})
 })
 
   
