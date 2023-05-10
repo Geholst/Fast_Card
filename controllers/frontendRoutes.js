@@ -3,6 +3,12 @@ const router = require("express").Router();
 const app = express();
 const {Profile, Deck, Flashcard} = require("../models");
 
+
+//renders homepage
+router.get("/", async (req,res) => {
+      res.render("main", {layout: 'index'})
+})  
+
 // Route to render the login screen
 router.get("/login", async (req,res) => {
   try {
