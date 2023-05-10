@@ -3,12 +3,19 @@
     flex-direction: column;
     background-color: yellow;
     border: 2px solid black;
-    height: 300px;
+    height: 400px;
     width: 200px;
+}
+
+#timer{
+    padding-left:10px;
+}
+
+#flip{
+    margin:0 10px
 }
 #interval-buttons{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-self: center;
     margin: 5px;
