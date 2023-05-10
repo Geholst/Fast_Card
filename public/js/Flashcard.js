@@ -7,3 +7,5 @@ class Flashcard {
     this.reviewDay = reviewDay;
   }
 }
+
+module.exports = Flashcard;
