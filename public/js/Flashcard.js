@@ -8,4 +8,4 @@ class Flashcard {
   }
 }
 
-module.exports = Flashcard;
+export default Flashcard;

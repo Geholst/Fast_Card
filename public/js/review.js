@@ -1,5 +1,5 @@
 const dayjs = require("dayjs");
-class Review {
+class Interval {
   static intervalA(flashcard) {
     const day = dayjs().add(5, "day").format("dddd").toLocaleLowerCase();
     return (flashcard.reviewDay = day);
@@ -21,6 +21,7 @@ class Review {
   }
 }
 
+module.exports = Interval;
 // const flashcard = {
 //   id: 1,
 //   reviewDay: null,
