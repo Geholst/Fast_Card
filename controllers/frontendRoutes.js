@@ -53,8 +53,18 @@ router.get("/review/:id", async (req,res) => {
   }
 })
 
+// Route to render the signup screen
 router.get("/signup", async (req,res) => {
-  res.render("signup", {layout: 'index'})
+  try {
+    if (req.session.userId) {
+      res.redirect("/dashboard")
+    } else {
+      res.render("signup", {layout: 'index'})
+    }  
+  } catch (err) {
+      console.log(err)
+      res.status(500).json({ msg: "ERROR", err });
+    }
 })
 
 module.exports = router
