@@ -38,9 +38,6 @@ router.get("/:id",(req,res)=>{
 router.post("/", (req, res) => {
     Profile.create({
       username: req.body.username,
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
-      email: req.body.email,
       password: req.body.password,
     })
     .then((newProfile) => {
@@ -56,9 +53,6 @@ router.post("/", (req, res) => {
 router.put("/:id",(req,res)=>{
     Profile.update({
         username: req.body.username,
-        firstName: req.body.firstName,
-        lastName: req.body.lastName,
-        email: req.body.email,
         password: req.body.password,
         score: req.body.score
     },{
