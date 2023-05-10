@@ -48,11 +48,11 @@ Profile.init(
 );
 
 // add property and reference to Box model
-Profile.belongsTo(Box, {
-  foreignKey: {
-    allowNull: false,
-  },
-});
-Box.hasMany(Profile);
+// Profile.belongsTo(Box, {
+//   foreignKey: {
+//     allowNull: false,
+//   },
+// });
+// Box.hasMany(Profile);
 
 module.exports = Profile;

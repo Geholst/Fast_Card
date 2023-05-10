@@ -12,5 +12,8 @@ router.get("/login", async (req,res) => {
       res.render("login", {layout: 'index'})
 })
 
-  
+
+router.get("/signup", async (req,res) => {
+  res.render("signup", {layout: 'index'})
+})
   module.exports = router
