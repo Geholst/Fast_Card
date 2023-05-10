@@ -6,6 +6,7 @@ loginForm.addEventListener("submit",e=>{
         username:document.getElementById("username-input"),
         password:document.getElementById("password-input")
     }
+    console.log(profileObj)
     fetch("/api/profile/login",{
         method:"POST",
         body:JSON.stringify(profileObj),
@@ -18,3 +19,22 @@ loginForm.addEventListener("submit",e=>{
         }
     })
 })
+
+// const login = async (e) => {
+//     e.preventDefault();
+//       const response = await fetch("/api/profile/login", {
+//         method: "POST",
+//         headers: { "Content-Type": "application/json" },
+//         body: JSON.stringify({
+//             username:document.getElementById("username-input"),
+//             password:document.getElementById("password-input")
+//         }),
+//       });
+//       if(res.ok){
+//         location.href = "/dashboard"
+//      } else {
+//          alert(response.statusText)
+//      }
+// }
+
+//   loginForm.addEventListener("submit", login);
