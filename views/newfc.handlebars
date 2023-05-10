@@ -1,0 +1,15 @@
+<div>
+    <form id="fc-form">
+        <label for="new-fc-name">name</label>
+        <input type="text" id="new-fc-name">
+        <label for="new-fc-front">front</label>
+        <input type="text" id="new-fc-front">
+        <label for="new-fc-back">back</label>
+        <input type="text" id="new-fc-back">
+        {{#each user.deck}}
+        <input type="radio" name="deck" value="{{name}}" id="{{id}}">
+        <label for="{{name}}">{{name}}</label>
+        {{/each}}
+    </form>
+</div>
+<script src="js/newfc.js"></script>
