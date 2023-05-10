@@ -117,4 +117,10 @@ router.post("/login", (req, res) => {
       });
 });
 
+// Logout
+router.post("/logout",(req,res)=>{
+    req.session.destroy();
+    res.json(req.session);
+  })
+
 module.exports = router;
