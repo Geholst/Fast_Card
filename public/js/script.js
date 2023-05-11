@@ -6,6 +6,7 @@ const a = document.getElementById("a");
 const b = document.getElementById("b");
 const c = document.getElementById("c");
 const d = document.getElementById("d");
+const cardData = document.getElementById("card-data");
 
 class Flashcard {
   constructor(id, front, back, reviewDay, isStarted) {
@@ -33,12 +34,23 @@ function start(item = 0, element) {
     // console.log("count: ", count);
   }
 }
-document.onload = start(0, timeLabel);
+const go = (document.onload = () => {
+  start(0, timeLabel);
+  cardData.innerHTML = ichi.front;
+});
+
+go();
 // console.log("ichi: ", ichi);
 const flip = document.getElementById("flip");
 flip.addEventListener("click", (event) => {
   event.preventDefault();
-  clearInterval(intervalID);
+  const currentData = cardData.innerHTML;
+  if (currentData === ichi.front) {
+    cardData.innerHTML = ichi.back;
+  } else {
+    cardData.innerHTML = ichi.front;
+  }
+  // clearInterval(intervalID);
 });
 a.addEventListener("click", () => {
   clearInterval(intervalID);
