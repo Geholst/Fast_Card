@@ -9,6 +9,11 @@ for (let i = 0; i < deckSelectorBtns.length; i++) {
     deckSelectorBtns[i].addEventListener("click", e=>{
         selectedDeckId = e.target.id;
         deckH3.innerHTML = `Current Selected Deck: ${e.target.name}`
+        console.log(selectedDeckId)
+        fetch(`/pickdeck/${selectedDeckId}`,{
+            method:"POST",
+            headers: {"Content-Type":"application/json"}
+        })
     })
 }
 
@@ -22,4 +27,8 @@ editBtn.addEventListener("click", e=>{
 
 newDeckBtn.addEventListener("click", e=>{
     window.location.assign(`/newdeck`)
+})
+
+newFcBtn.addEventListener("click", e=>{
+    window.location.assign(`/newfc`)
 })

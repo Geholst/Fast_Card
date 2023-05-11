@@ -87,7 +87,7 @@ router.get("/newfc", async (req,res) => {
     })
     const profile = profileData.get({plain: true})
     console.log(profile)
-    return res.render("newfc", {user: profile, layout: 'index'})
+    return res.render("newfc", {...profile, layout: 'index'})
   } catch (err) {
     console.log(err)
     res.status(500).json({ msg: "ERROR", err });
