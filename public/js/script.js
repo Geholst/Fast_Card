@@ -30,7 +30,7 @@ function start(item = 0, element) {
   intervalID = setInterval(countUp, 1000);
   function countUp() {
     count++;
-    element.innerHTML = count;
+    element.innerHTML = "Time: " + count;
     // console.log("count: ", count);
   }
 }
