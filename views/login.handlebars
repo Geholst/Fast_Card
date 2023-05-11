@@ -1,13 +1,24 @@
 
-<div>
+<div id="login">
   <h1>Login here</h1>
   <form id="login-form">
    
-    <label for="username-input"></label>
+    {{!-- <label for="username-input"></label>
     <input type="text" id="username-input" placeholder="Username">
 
     <label for="password-input"></label>
-    <input type="password" id="password-input" placeholder="Password">
+    <input type="password" id="password-input" placeholder="Password"> --}}
+
+    <div class="input-group mb-3">
+  <span class="input-group-text" id="username-input">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="password-input">#</span>
+  <input type="text" class="form-control"  placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+</div>
+
 
     
     <button type="submit">Submit</button>

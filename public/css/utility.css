@@ -1,3 +1,10 @@
+:root {
+    --primary:rgb(21, 17, 17);
+    --secondary: rgb(59, 56, 56);
+    --text: white;
+    --btn: rgb(36, 118, 241);
+}
+
 #card-container{
     display: flex;
     flex-direction: column;
@@ -5,18 +12,19 @@
 }
 #card-data{
     text-align: center;
+    color: black;
 }
 a{
     text-decoration: none;
     border: 2px solid cadetblue;
     border-style: unset;
-    color: #000000;
+    color: var(--text);
     font-size: 18px;
     font-weight: bold;
 
 }
 a:hover{
-    color: #5d5454;
+    color:gray;
 }
 #app-title{
     text-align: center;

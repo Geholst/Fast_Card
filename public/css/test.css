@@ -1,7 +1,14 @@
+:root {
+    --primary:rgb(21, 17, 17);
+    --secondary: rgb(59, 56, 56);
+    --text: white;
+    --btn: rgb(36, 118, 241);
+}
+
 #flashcard{
     display: flex;
     flex-direction: column;
-    background-color: cadetblue;
+    background-color:aliceblue;
     border: 2px solid black;
     height: 500px;
     width: 300px;
@@ -9,10 +16,11 @@
 
 #timer{
     padding-left:10px;
+    color: black;
 }
 
 #flip{
-    background-color:cadetblue;
+    background-color:var(--btn);
     border-color: black;
     border-radius: 8px;
     margin:0 10px;
