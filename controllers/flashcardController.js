@@ -49,12 +49,14 @@ router.post("/", (req, res) => {
     })
 });
 
-// Update a Flashcard by ID TODO: Update box as well?
+// Update a Flashcard by ID
 router.put("/:id",(req,res)=>{
     Flashcard.update({
         name:req.body.name,
         front:req.body.front,
         back:req.body.back,
+        started:req.body.started,
+        reviewDay:req.body.reviewDay,
         tag:req.body.tag,
     },{
         where:{id:req.params.id}

@@ -108,4 +108,26 @@ router.get("/newdeck", async (req,res) => {
   }
 })
 
+// Route to render the deck editor screen
+router.get("/deckedit/:id", async (req,res) => {
+  try {
+    // if (!req.session.userId) {
+    //   res.redirect("/login")
+    // }
+    const deckData = await Deck.findByPk(req.params.id,{
+      include: {
+        all: true,
+        nested: true
+      }
+    })
+    console.log(deckData)
+    const deck = deckData.get({ plain:true })
+    console.log(deck)
+    res.render("deckedit", {...deck, layout: 'index'})
+  } catch (err) {
+    console.log(err)
+    res.status(500).json({ msg: "ERROR", err });
+  }
+})
+// res.render("home",allProjects:deck)
 module.exports = router
