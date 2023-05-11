@@ -41,7 +41,10 @@ Technologies used:
 - express-session
 - mysql2
 - sequelize
+- Bootstrap CSS Framework
 - Heroku
+- Burger Favicon: https://www.favicon.cc/?action=icon&file_id=951529 
+
 
 ## License
 

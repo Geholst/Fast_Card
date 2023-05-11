@@ -3,6 +3,12 @@ const router = require("express").Router();
 const app = express();
 const {Profile, Deck, Flashcard} = require("../models");
 
+
+//renders homepage
+router.get("/", async (req,res) => {
+      res.render("main", {layout: 'index'})
+})  
+
 // Route to render the login screen
 router.get("/login", async (req,res) => {
   try {
@@ -31,7 +37,7 @@ router.get("/dashboard", async (req,res) => {
     })
     const profile = profileData.get({plain: true})
     console.log(profile)
-    return res.render("dashboard", profile)
+    return res.render("dashboard", {user: profile, layout: 'index'})
   } catch (err) {
     console.log(err)
     res.status(500).json({ msg: "ERROR", err });
@@ -53,8 +59,39 @@ router.get("/review/:id", async (req,res) => {
   }
 })
 
+// Route to render the signup screen
 router.get("/signup", async (req,res) => {
-  res.render("signup", {layout: 'index'})
+  try {
+    if (req.session.userId) {
+      res.redirect("/dashboard")
+    } else {
+      res.render("signup", {layout: 'index'})
+    }  
+  } catch (err) {
+      console.log(err)
+      res.status(500).json({ msg: "ERROR", err });
+    }
+})
+
+// Route to render the new flashcard screen
+router.get("/newfc", async (req,res) => {
+  try {
+    if (!req.session.userId) {
+      res.redirect("/login")
+    }
+    const profileData = await Profile.findByPk(req.session.userId, {
+      include: {
+        all: true,
+        nested: true
+      }
+    })
+    const profile = profileData.get({plain: true})
+    console.log(profile)
+    return res.render("newfc", {user: profile, layout: 'index'})
+  } catch (err) {
+    console.log(err)
+    res.status(500).json({ msg: "ERROR", err });
+  }
 })
 
 module.exports = router
