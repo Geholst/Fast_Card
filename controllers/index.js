@@ -9,7 +9,7 @@ const frontendRoutes = require("./frontendRoutes");
 router.use("/api/profile", profileRoutes);
 router.use("/api/deck", deckRoutes);
 router.use("/api/flashcard", flashcardRoutes);
-router.use("/test", test);
+router.use("/sample", test);
 router.use("/", frontendRoutes);
 
 module.exports = router;
