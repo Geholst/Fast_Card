@@ -1,6 +1,8 @@
 :root {
-    --primary: deepskyblue;
-    --secondary: cadetblue;
+    --primary:rgb(21, 17, 17);
+    --secondary: rgb(59, 56, 56);
+    --text: white;
+    --btn: rgb(36, 118, 241);
 }
 * {
     box-sizing: border-box;
@@ -11,7 +13,7 @@
     margin: 0;
     padding: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:black;
+    color:var(--text);
     line-height: 1.5;
     font-size: 16px;
   }
@@ -30,14 +32,14 @@
   }
   
   .nav-item a {
-    color:black;
+    color: var(--text);
   }
   
 .hero {
     padding: 4% 4% 1%;
-    background-color:lightblue;
-    color: black;
-  }
+    background-color:var(--secondary);
+    color: var(--text);
+  } 
   li {
   display: inline;
   justify-content: space-between;
@@ -45,14 +47,23 @@
 
 #sample-deck {
   text-align: center;
-
 }
 
 #start {
-  background-color: cadetblue;
-  border-color: black;
+  background-color:var(--btn);
+  border-color: white;
   border-radius: 8px;
   margin: 0 10px;
   width: fit-content;
   font-size: 22px;
+}
+
+#login {
+  display: flex;
+  justify-content: center;
+}
+
+#signup {
+  display: flex;
+  justify-content: center;
 }
