@@ -1,0 +1,346 @@
+[
+  {
+    "name": "hiragana",
+    "front": "あ",
+    "back": "a",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "い",
+    "back": "i",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "う",
+    "back": "u",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "え",
+    "back": "e",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "お",
+    "back": "o",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "か",
+    "back": "ka",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "き",
+    "back": "ki",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "く",
+    "back": "ku",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "け",
+    "back": "ke",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "こ",
+    "back": "ko",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "さ",
+    "back": "sa",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "し",
+    "back": "shi",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "す",
+    "back": "su",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "せ",
+    "back": "se",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "そ",
+    "back": "so",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "back": "ta",
+    "front": "た",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "back": "chi",
+    "front": "ち",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "back": "tsu",
+    "front": "つ",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "て",
+    "back": "te",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "と",
+    "back": "to",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "な",
+    "back": "na",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "に",
+    "back": "ni",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "ぬ",
+    "back": "nu",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "ね",
+    "back": "ne",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "の",
+    "back": "no",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "は",
+    "back": "ha",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "ひ",
+    "back": "hi",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "ふ",
+    "back": "fu",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "へ",
+    "back": "he",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "ほ",
+    "back": "ho",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "ま",
+    "back": "ma",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "み",
+    "back": "mi",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "む",
+    "back": "mu",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "め",
+    "back": "me",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "も",
+    "back": "mo",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "や",
+    "back": "ya",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "ゆ",
+    "back": "yu",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "よ",
+    "back": "yo",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "ら",
+    "back": "ra",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "り",
+    "back": "ri",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "る",
+    "back": "ru",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "れ",
+    "back": "re",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "hiragana",
+    "front": "ろ",
+    "back": "ro",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  }
+]
