@@ -7,7 +7,7 @@ const {Profile, Deck, Flashcard} = require("../models");
 //renders homepage
 router.get("/", async (req,res) => {
       res.render("main", {layout: 'index'})
-})  
+})
 
 // Route to render the login screen
 router.get("/login", async (req,res) => {
@@ -76,10 +76,10 @@ router.get("/signup", async (req,res) => {
 // Route to render the new flashcard screen
 router.get("/newfc", async (req,res) => {
   try {
-    if (!req.session.userId) {
-      res.redirect("/login")
-    }
-    const profileData = await Profile.findByPk(req.session.userId, {
+    // if (!req.session.userId) {
+    //   res.redirect("/login")
+    // }
+    const profileData = await Profile.findByPk(1, {
       include: {
         all: true,
         nested: true
@@ -97,11 +97,11 @@ router.get("/newfc", async (req,res) => {
 // Route to render the new deck screen
 router.get("/newdeck", async (req,res) => {
   try {
-    if (req.session.userId) {
-      res.redirect("/login")
-    } else {
+    // if (req.session.userId) {
+    //   res.redirect("/login")
+    // } else {
       res.render("newdeck", {layout: 'index'})
-    }  
+    // }  
   } catch (err) {
     console.log(err)
     res.status(500).json({ msg: "ERROR", err });
@@ -111,15 +111,13 @@ router.get("/newdeck", async (req,res) => {
 // Route to render the deck editor screen
 router.get("/deckedit/:id", async (req,res) => {
   try {
-    // if (!req.session.userId) {
-    //   res.redirect("/login")
-    // }
     const deckData = await Deck.findByPk(req.params.id,{
       include: {
         all: true,
         nested: true
       }
     })
+    //TODO: add check for deck's profile id matching the session user id
     console.log(deckData)
     const deck = deckData.get({ plain:true })
     console.log(deck)

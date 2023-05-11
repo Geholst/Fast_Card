@@ -1,13 +1,14 @@
-const button = document.getElementById("test")
+const delButton = document.querySelectorAll(".del-btn");
 
-
-
-// const fcId = // id of clicked button
-// fetch(`/api/flashcard/${fcId}`,{
-//     method:"DELETE"
-// })
-
-button.addEventListener("click",(event)=>{
-    const item = event.target
-    console.log(item);
-})
+for (let i = 0; i < delButton.length; i++) {
+    delButton[i].addEventListener("click", e=>{
+        console.log(delButton[i]);
+        console.log(e.target)
+    const fcId = e.target.id
+        fetch(`/api/flashcard/${fcId}`,{
+            method:"DELETE"
+        }).then(res=>{
+           location.reload();
+        })
+    })
+}
