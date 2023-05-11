@@ -88,4 +88,19 @@ router.delete("/:id",(req,res)=>{
     })
 });
 
+// Create a new Flashcard from front
+router.post("/new", (req, res) => {
+    Flashcard.create({
+        name:req.body.name,
+        front:req.body.front,
+        back:req.body.back,
+        DeckId:req.session.deckId,
+    }).then(newCard=>{
+        res.json(newCard)
+    }).catch(err=>{
+        console.log(err);
+        res.status(500).json({msg:"ERROR",err})
+    })
+});
+
 module.exports = router;
