@@ -1,0 +1,378 @@
+[
+  {
+    "name": "katakana",
+    "front": "か",
+    "back": "ka",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ア",
+    "back": "a",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "イ",
+    "back": "i",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ウ",
+    "back": "u",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "エ",
+    "back": "e",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "オ",
+    "back": "o",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "カ",
+    "back": "ka",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "キ",
+    "back": "ki",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ク",
+    "back": "ku",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ケ",
+    "back": "ke",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "コ",
+    "back": "ko",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "サ",
+    "back": "sa",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "シ",
+    "back": "shi",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ス",
+    "back": "su",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "セ",
+    "back": "se",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ソ",
+    "back": "so",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "タ",
+    "back": "ta",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "チ",
+    "back": "chi",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ツ",
+    "back": "tsu",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "テ",
+    "back": "te",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ト",
+    "back": "to",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ナ",
+    "back": "na",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ニ",
+    "back": "ni",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ヌ",
+    "back": "nu",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ネ",
+    "back": "ne",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ノ",
+    "back": "no",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ハ",
+    "back": "ha",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ヒ",
+    "back": "hi",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "フ",
+    "back": "fu",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ヘ",
+    "back": "he",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ホ",
+    "back": "ho",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "マ",
+    "back": "ma",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ミ",
+    "back": "mi",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ム",
+    "back": "mu",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "メ",
+    "back": "me",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "モ",
+    "back": "mo",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ヤ",
+    "back": "ya",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ユ",
+    "back": "yu",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ヨ",
+    "back": "yo",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ラ",
+    "back": "ra",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "リ",
+    "back": "ri",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ル",
+    "back": "ru",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "レ",
+    "back": "re",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ロ",
+    "back": "ro",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ワ",
+    "back": "wa",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ヲ",
+    "back": "wo",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  },
+  {
+    "name": "katakana",
+    "front": "ン",
+    "back": "n",
+    "started": false,
+    "reviewDay": null,
+    "tag": [0]
+  }
+]
