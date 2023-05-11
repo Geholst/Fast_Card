@@ -94,4 +94,18 @@ router.get("/newfc", async (req,res) => {
   }
 })
 
+// Route to render the new deck screen
+router.get("/newdeck", async (req,res) => {
+  try {
+    if (req.session.userId) {
+      res.redirect("/login")
+    } else {
+      res.render("newdeck", {layout: 'index'})
+    }  
+  } catch (err) {
+    console.log(err)
+    res.status(500).json({ msg: "ERROR", err });
+  }
+})
+
 module.exports = router
