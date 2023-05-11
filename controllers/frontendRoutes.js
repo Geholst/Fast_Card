@@ -37,7 +37,7 @@ router.get("/dashboard", async (req,res) => {
     })
     const profile = profileData.get({plain: true})
     console.log(profile)
-    return res.render("dashboard", {user: profile, layout: 'index'})
+    return res.render("dashboard", {...profile, layout: 'index'})
   } catch (err) {
     console.log(err)
     res.status(500).json({ msg: "ERROR", err });
@@ -79,7 +79,7 @@ router.get("/newfc", async (req,res) => {
     // if (!req.session.userId) {
     //   res.redirect("/login")
     // }
-    const profileData = await Profile.findByPk(1, {
+    const profileData = await Profile.findByPk(req.session.userId, {
       include: {
         all: true,
         nested: true
