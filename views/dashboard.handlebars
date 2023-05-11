@@ -1,0 +1,12 @@
+<div>
+    <h2>{{username}} Dashboard</h2>
+    <h3 id="selected-deck">Select a Deck</h3>
+    <button id="edit-btn">Edit</button>
+    <button id="newfc-btn">New Card</button>
+    {{#each Decks}}
+    <p>{{name}}</p>
+    <button name="{{name}}" id="{{id}}" class="deck-btn">Select</button>
+    {{/each}}
+    <button id="newdeck-btn">New Deck</button>
+</div>
+<script src="./js/dashboard.js"></script>

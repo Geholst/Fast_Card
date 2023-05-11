@@ -1,4 +1,4 @@
-const flashcardCreate = document.getElementById("fc-form");
+const flashcardCreate = document.querySelector("#fc-form");
 const deckSelection = document.querySelectorAll('input[name="deck"]');
 
 flashcardCreate.addEventListener("submit",e=>{
@@ -10,9 +10,9 @@ flashcardCreate.addEventListener("submit",e=>{
         }
     }
     const flashcardObj = {
-        name:document.getElementById("new-fc-name"),
-        front:document.getElementById("new-fc-front"),
-        back:document.getElementById("new-fc-back"),
+        name:document.querySelector("#new-fc-name").value,
+        front:document.querySelector("#new-fc-front").value,
+        back:document.querySelector("#new-fc-back").value,
         DeckId:pickedDeck
     }
     fetch("/api/flashcard/",{
