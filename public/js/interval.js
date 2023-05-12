@@ -1,3 +1,5 @@
+//TODO: A= Monthly, B=Weekly, C=Alternate Days, D=Daily
+
 export const days = [
   null,
   "monday",
@@ -14,7 +16,7 @@ export class Interval {
     // const day = dayjs().add(5, "day").format("dddd").toLocaleLowerCase();
     const date = new Date();
     const day = new Date(date);
-    day.setDate(day.getDate() + 5);
+    day.setDate(day.getDate() + 30);
     const newDay = days[day.getDay()];
     console.log("Next Review Date: ", day, "\n", "Day: ", newDay);
 
@@ -24,7 +26,7 @@ export class Interval {
   static intervalB(flashcard) {
     const date = new Date();
     const day = new Date(date);
-    day.setDate(day.getDate() + 3);
+    day.setDate(day.getDate() + 7);
     const newDay = days[day.getDay() + 1];
     console.log("Next Review Date: ", day, "\n", "Day: ", newDay);
     return (flashcard.reviewDay = day);
