@@ -49,12 +49,14 @@ router.post("/", (req, res) => {
     })
 });
 
-// Update a Flashcard by ID TODO: Update box as well?
+// Update a Flashcard by ID
 router.put("/:id",(req,res)=>{
     Flashcard.update({
         name:req.body.name,
         front:req.body.front,
         back:req.body.back,
+        started:req.body.started,
+        reviewDay:req.body.reviewDay,
         tag:req.body.tag,
     },{
         where:{id:req.params.id}
@@ -80,6 +82,21 @@ router.delete("/:id",(req,res)=>{
             return res.status(404).json({msg:"No flashcard with this id."})
         }
         res.json(delFlashcard)
+    }).catch(err=>{
+        console.log(err);
+        res.status(500).json({msg:"ERROR",err})
+    })
+});
+
+// Create a new Flashcard from front
+router.post("/new", (req, res) => {
+    Flashcard.create({
+        name:req.body.name,
+        front:req.body.front,
+        back:req.body.back,
+        DeckId:req.session.deckId,
+    }).then(newCard=>{
+        res.json(newCard)
     }).catch(err=>{
         console.log(err);
         res.status(500).json({msg:"ERROR",err})

@@ -7,7 +7,7 @@ const {Profile, Deck, Flashcard} = require("../models");
 //renders homepage
 router.get("/", async (req,res) => {
       res.render("main", {layout: 'index'})
-})  
+})
 
 // Route to render the login screen
 router.get("/login", async (req,res) => {
@@ -37,7 +37,7 @@ router.get("/dashboard", async (req,res) => {
     })
     const profile = profileData.get({plain: true})
     console.log(profile)
-    return res.render("dashboard", {user: profile, layout: 'index'})
+    return res.render("dashboard", {...profile, layout: 'index'})
   } catch (err) {
     console.log(err)
     res.status(500).json({ msg: "ERROR", err });
@@ -76,9 +76,9 @@ router.get("/signup", async (req,res) => {
 // Route to render the new flashcard screen
 router.get("/newfc", async (req,res) => {
   try {
-    if (!req.session.userId) {
-      res.redirect("/login")
-    }
+    // if (!req.session.userId) {
+    //   res.redirect("/login")
+    // }
     const profileData = await Profile.findByPk(req.session.userId, {
       include: {
         all: true,
@@ -87,11 +87,45 @@ router.get("/newfc", async (req,res) => {
     })
     const profile = profileData.get({plain: true})
     console.log(profile)
-    return res.render("newfc", {user: profile, layout: 'index'})
+    return res.render("newfc", {...profile, layout: 'index'})
   } catch (err) {
     console.log(err)
     res.status(500).json({ msg: "ERROR", err });
   }
 })
 
+// Route to render the new deck screen
+router.get("/newdeck", async (req,res) => {
+  try {
+    // if (req.session.userId) {
+    //   res.redirect("/login")
+    // } else {
+      res.render("newdeck", {layout: 'index'})
+    // }  
+  } catch (err) {
+    console.log(err)
+    res.status(500).json({ msg: "ERROR", err });
+  }
+})
+
+// Route to render the deck editor screen
+router.get("/deckedit/:id", async (req,res) => {
+  try {
+    const deckData = await Deck.findByPk(req.params.id,{
+      include: {
+        all: true,
+        nested: true
+      }
+    })
+    //TODO: add check for deck's profile id matching the session user id
+    console.log(deckData)
+    const deck = deckData.get({ plain:true })
+    console.log(deck)
+    res.render("deckedit", {...deck, layout: 'index'})
+  } catch (err) {
+    console.log(err)
+    res.status(500).json({ msg: "ERROR", err });
+  }
+})
+// res.render("home",allProjects:deck)
 module.exports = router

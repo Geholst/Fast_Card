@@ -1,10 +1,10 @@
-const signupForm = document.getElementById("signup-form");
+const signupForm = document.getElementById("login-form");
 
 signupForm.addEventListener("submit",e=>{
     e.preventDefault();
     const profileObj = {
-        username:document.getElementById("signup-username"),
-        password:document.getElementById("signup-password")
+        username:document.getElementById("signup-username").value,
+        password:document.getElementById("signup-password").value
     }
     fetch("/api/profile/",{
         method:"POST",

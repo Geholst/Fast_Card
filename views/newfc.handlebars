@@ -1,15 +1,17 @@
 <div>
+    <h4>New Flashcard</h4>
     <form id="fc-form">
-        <label for="new-fc-name">name</label>
+        <label for="new-fc-name">Flashcard Name</label>
         <input type="text" id="new-fc-name">
-        <label for="new-fc-front">front</label>
+        <label for="new-fc-front">Front of Flashcard</label>
         <input type="text" id="new-fc-front">
-        <label for="new-fc-back">back</label>
+        <label for="new-fc-back">Back of Flashcard</label>
         <input type="text" id="new-fc-back">
         {{#each user.deck}}
         <input type="radio" name="deck" value="{{name}}" id="{{id}}">
         <label for="{{name}}">{{name}}</label>
         {{/each}}
+        <button type="submit">Submit</button>
     </form>
 </div>
 <script src="js/newfc.js"></script>
