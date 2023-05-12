@@ -99,15 +99,18 @@ router.delete("/:id",(req,res)=>{
 });
 
 // Setup session data for selected deck
-router.post("/pickdeck/:id", (req, res) => {
-    Deck.findByPk(req.params.id)
-    .then((pickedDeck) => {
+router.post("/pickdeck", (req, res) => {
+    Deck.findOne({
+        where: {
+          id: req.body.id,
+        },
+      }).then((pickedDeck) => {
         if(!pickedDeck){
           return res.status(404).json({msg:"No deck with that id."})
         }
             console.log(pickedDeck);
-            req.session.deckId = pickedDeck.id;
-            req.session.deckName = pickedDeck.name;
+            req.session.sessDeckId = pickedDeck.id;
+            req.session.sessDeckName = pickedDeck.name;
             return res.json(pickedDeck);
       })
     .catch((err) => {

@@ -7,11 +7,7 @@
         <input type="text" id="new-fc-front">
         <label for="new-fc-back">Back of Flashcard</label>
         <input type="text" id="new-fc-back">
-        {{#each user.deck}}
-        <input type="radio" name="deck" value="{{name}}" id="{{id}}">
-        <label for="{{name}}">{{name}}</label>
-        {{/each}}
-        <button type="submit">Submit</button>
+        <button type="submit" id="new-fc-btn">Submit</button>
     </form>
 </div>
 <script src="js/newfc.js"></script>
