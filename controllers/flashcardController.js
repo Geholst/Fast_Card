@@ -94,7 +94,7 @@ router.post("/new", (req, res) => {
         name:req.body.name,
         front:req.body.front,
         back:req.body.back,
-        DeckId:req.session.deckId,
+        DeckId:req.session.sessDeckId,
     }).then(newCard=>{
         res.json(newCard)
     }).catch(err=>{
