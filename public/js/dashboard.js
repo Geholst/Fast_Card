@@ -9,9 +9,13 @@ for (let i = 0; i < deckSelectorBtns.length; i++) {
     deckSelectorBtns[i].addEventListener("click", e=>{
         selectedDeckId = e.target.id;
         deckH3.innerHTML = `Current Selected Deck: ${e.target.name}`
-        console.log(selectedDeckId)
-        fetch(`/pickdeck/${selectedDeckId}`,{
+        const deckObj = {
+            id:selectedDeckId
+        }
+        console.log(deckObj)
+        fetch(`api/deck/pickdeck`,{
             method:"POST",
+            body:JSON.stringify(deckObj),
             headers: {"Content-Type":"application/json"}
         })
     })
@@ -22,7 +26,7 @@ editBtn.addEventListener("click", e=>{
         alert("Select a deck in order to Edit");
         return;
     }
-    window.location.assign(`/deckedit/${selectedDeckId}`)
+    window.location.assign(`/deckedit`)
 })
 
 newDeckBtn.addEventListener("click", e=>{
@@ -30,5 +34,9 @@ newDeckBtn.addEventListener("click", e=>{
 })
 
 newFcBtn.addEventListener("click", e=>{
+    if(!selectedDeckId){
+        alert("Select a deck to add a flashcard to");
+        return;
+    }
     window.location.assign(`/newfc`)
 })
