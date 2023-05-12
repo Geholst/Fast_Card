@@ -252,6 +252,6 @@ document.addEventListener("click", (event) => {
       `Alternate Days: ${cPercent}%` +
       `<br>` +
       `Daily: ${dPercent}%`;
-    cardData.style.fontSize = "14px";
+    cardData.style.fontSize = "18px";
   }
 });
