@@ -151,6 +151,7 @@ a.addEventListener("click", (event) => {
 
   next();
 });
+
 b.addEventListener("click", (event) => {
   timeLabel.innerHTML = "Time: 0";
   event.preventDefault();
@@ -176,6 +177,7 @@ b.addEventListener("click", (event) => {
     scores[3];
   next();
 });
+
 c.addEventListener("click", (event) => {
   timeLabel.innerHTML = "Time: 0";
   event.preventDefault();
@@ -201,6 +203,7 @@ c.addEventListener("click", (event) => {
     scores[3];
   next();
 });
+
 d.addEventListener("click", (event) => {
   timeLabel.innerHTML = "Time: 0";
   event.preventDefault();
@@ -240,7 +243,15 @@ document.addEventListener("click", (event) => {
     const cPercent = Math.round((cStats / total) * 100);
     const dPercent = Math.round((dStats / total) * 100);
     const totalPercent = total / flashcards.length;
-    cardData.innerHTML = "Accuracy: " + totalPercent + "%";
+    // cardData.innerHTML = "Accuracy: " + totalPercent + "%";
+    cardData.innerHTML =
+      `Monthly: ${aPercent}%` +
+      `<br>` +
+      `Weekly: ${bPercent}%` +
+      `<br>` +
+      `Alternate Days: ${cPercent}%` +
+      `<br>` +
+      `Daily: ${dPercent}%`;
     cardData.style.fontSize = "14px";
   }
 });
