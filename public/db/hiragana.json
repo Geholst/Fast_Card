@@ -1,6 +1,6 @@
 [
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "あ",
     "back": "a",
     "started": false,
@@ -8,7 +8,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "い",
     "back": "i",
     "started": false,
@@ -16,7 +16,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "う",
     "back": "u",
     "started": false,
@@ -24,7 +24,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "え",
     "back": "e",
     "started": false,
@@ -32,7 +32,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "お",
     "back": "o",
     "started": false,
@@ -40,7 +40,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "か",
     "back": "ka",
     "started": false,
@@ -48,7 +48,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "き",
     "back": "ki",
     "started": false,
@@ -56,7 +56,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "く",
     "back": "ku",
     "started": false,
@@ -64,7 +64,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "け",
     "back": "ke",
     "started": false,
@@ -72,7 +72,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "こ",
     "back": "ko",
     "started": false,
@@ -80,7 +80,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "さ",
     "back": "sa",
     "started": false,
@@ -88,7 +88,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "し",
     "back": "shi",
     "started": false,
@@ -96,7 +96,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "す",
     "back": "su",
     "started": false,
@@ -104,7 +104,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "せ",
     "back": "se",
     "started": false,
@@ -112,7 +112,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "そ",
     "back": "so",
     "started": false,
@@ -120,7 +120,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "back": "ta",
     "front": "た",
     "started": false,
@@ -128,7 +128,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "back": "chi",
     "front": "ち",
     "started": false,
@@ -136,7 +136,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "back": "tsu",
     "front": "つ",
     "started": false,
@@ -144,7 +144,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "て",
     "back": "te",
     "started": false,
@@ -152,7 +152,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "と",
     "back": "to",
     "started": false,
@@ -160,7 +160,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "な",
     "back": "na",
     "started": false,
@@ -168,7 +168,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "に",
     "back": "ni",
     "started": false,
@@ -176,7 +176,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "ぬ",
     "back": "nu",
     "started": false,
@@ -184,7 +184,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "ね",
     "back": "ne",
     "started": false,
@@ -192,7 +192,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "の",
     "back": "no",
     "started": false,
@@ -200,7 +200,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "は",
     "back": "ha",
     "started": false,
@@ -208,7 +208,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "ひ",
     "back": "hi",
     "started": false,
@@ -216,7 +216,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "ふ",
     "back": "fu",
     "started": false,
@@ -224,7 +224,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "へ",
     "back": "he",
     "started": false,
@@ -232,7 +232,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "ほ",
     "back": "ho",
     "started": false,
@@ -240,7 +240,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "ま",
     "back": "ma",
     "started": false,
@@ -248,7 +248,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "み",
     "back": "mi",
     "started": false,
@@ -256,7 +256,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "む",
     "back": "mu",
     "started": false,
@@ -264,7 +264,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "め",
     "back": "me",
     "started": false,
@@ -272,7 +272,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "も",
     "back": "mo",
     "started": false,
@@ -280,7 +280,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "や",
     "back": "ya",
     "started": false,
@@ -288,7 +288,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "ゆ",
     "back": "yu",
     "started": false,
@@ -296,7 +296,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "よ",
     "back": "yo",
     "started": false,
@@ -304,7 +304,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "ら",
     "back": "ra",
     "started": false,
@@ -312,7 +312,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "り",
     "back": "ri",
     "started": false,
@@ -320,7 +320,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "る",
     "back": "ru",
     "started": false,
@@ -328,7 +328,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "れ",
     "back": "re",
     "started": false,
@@ -336,7 +336,7 @@
     "tag": [0]
   },
   {
-    "name": "hiragana",
+    "name": "Hiragana",
     "front": "ろ",
     "back": "ro",
     "started": false,
