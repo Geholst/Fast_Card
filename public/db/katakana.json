@@ -1,6 +1,6 @@
 [
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "か",
     "back": "ka",
     "started": false,
@@ -8,7 +8,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ア",
     "back": "a",
     "started": false,
@@ -16,7 +16,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "イ",
     "back": "i",
     "started": false,
@@ -24,7 +24,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ウ",
     "back": "u",
     "started": false,
@@ -32,7 +32,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "エ",
     "back": "e",
     "started": false,
@@ -40,7 +40,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "オ",
     "back": "o",
     "started": false,
@@ -48,7 +48,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "カ",
     "back": "ka",
     "started": false,
@@ -56,7 +56,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "キ",
     "back": "ki",
     "started": false,
@@ -64,7 +64,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ク",
     "back": "ku",
     "started": false,
@@ -72,7 +72,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ケ",
     "back": "ke",
     "started": false,
@@ -80,7 +80,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "コ",
     "back": "ko",
     "started": false,
@@ -88,7 +88,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "サ",
     "back": "sa",
     "started": false,
@@ -96,7 +96,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "シ",
     "back": "shi",
     "started": false,
@@ -104,7 +104,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ス",
     "back": "su",
     "started": false,
@@ -112,7 +112,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "セ",
     "back": "se",
     "started": false,
@@ -120,7 +120,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ソ",
     "back": "so",
     "started": false,
@@ -128,7 +128,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "タ",
     "back": "ta",
     "started": false,
@@ -136,7 +136,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "チ",
     "back": "chi",
     "started": false,
@@ -144,7 +144,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ツ",
     "back": "tsu",
     "started": false,
@@ -152,7 +152,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "テ",
     "back": "te",
     "started": false,
@@ -160,7 +160,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ト",
     "back": "to",
     "started": false,
@@ -168,7 +168,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ナ",
     "back": "na",
     "started": false,
@@ -176,7 +176,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ニ",
     "back": "ni",
     "started": false,
@@ -184,7 +184,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ヌ",
     "back": "nu",
     "started": false,
@@ -192,7 +192,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ネ",
     "back": "ne",
     "started": false,
@@ -200,7 +200,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ノ",
     "back": "no",
     "started": false,
@@ -208,7 +208,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ハ",
     "back": "ha",
     "started": false,
@@ -216,7 +216,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ヒ",
     "back": "hi",
     "started": false,
@@ -224,7 +224,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "フ",
     "back": "fu",
     "started": false,
@@ -232,7 +232,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ヘ",
     "back": "he",
     "started": false,
@@ -240,7 +240,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ホ",
     "back": "ho",
     "started": false,
@@ -248,7 +248,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "マ",
     "back": "ma",
     "started": false,
@@ -256,7 +256,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ミ",
     "back": "mi",
     "started": false,
@@ -264,7 +264,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ム",
     "back": "mu",
     "started": false,
@@ -272,7 +272,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "メ",
     "back": "me",
     "started": false,
@@ -280,7 +280,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "モ",
     "back": "mo",
     "started": false,
@@ -288,7 +288,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ヤ",
     "back": "ya",
     "started": false,
@@ -296,7 +296,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ユ",
     "back": "yu",
     "started": false,
@@ -304,7 +304,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ヨ",
     "back": "yo",
     "started": false,
@@ -312,7 +312,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ラ",
     "back": "ra",
     "started": false,
@@ -320,7 +320,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "リ",
     "back": "ri",
     "started": false,
@@ -328,7 +328,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ル",
     "back": "ru",
     "started": false,
@@ -336,7 +336,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "レ",
     "back": "re",
     "started": false,
@@ -344,7 +344,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ロ",
     "back": "ro",
     "started": false,
@@ -352,7 +352,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ワ",
     "back": "wa",
     "started": false,
@@ -360,7 +360,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ヲ",
     "back": "wo",
     "started": false,
@@ -368,7 +368,7 @@
     "tag": [0]
   },
   {
-    "name": "katakana",
+    "name": "Katakana",
     "front": "ン",
     "back": "n",
     "started": false,
