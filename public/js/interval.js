@@ -17,9 +17,7 @@ export class Interval {
     const date = new Date();
     const day = new Date(date);
     day.setDate(day.getDate() + 30);
-    const newDay = days[day.getDay()];
-    console.log("Next Review Date: ", day, "\n", "Day: ", newDay);
-
+    console.log("Next Review Date: ", day);
     return (flashcard.reviewDay = day);
   }
 
@@ -27,8 +25,7 @@ export class Interval {
     const date = new Date();
     const day = new Date(date);
     day.setDate(day.getDate() + 7);
-    const newDay = days[day.getDay() + 1];
-    console.log("Next Review Date: ", day, "\n", "Day: ", newDay);
+    console.log("Next Review Date: ", day);
     return (flashcard.reviewDay = day);
   }
 
@@ -36,8 +33,7 @@ export class Interval {
     const date = new Date();
     const day = new Date(date);
     day.setDate(day.getDate() + 2);
-    const newDay = days[day.getDay()];
-    console.log("Next Review Date: ", day, "\n", "Day: ", newDay);
+    console.log("Next Review Date: ", day);
     return (flashcard.reviewDay = day);
   }
 
@@ -45,8 +41,7 @@ export class Interval {
     const date = new Date();
     const day = new Date(date);
     day.setDate(day.getDate() + 1);
-    const newDay = days[day.getDay()];
-    console.log("Next Review Date: ", day, "\n", "Day: ", newDay);
+    console.log("Next Review Date: ", day);
     return (flashcard.reviewDay = day);
   }
 }

@@ -1,11 +1,10 @@
-class Flashcard {
-  constructor(id, front, back, reviewDay, isStarted) {
-    this.id = id;
+export class Flashcard {
+  constructor(name, front, back, reviewDay, isStarted, tag) {
+    this.name = name;
     this.front = front;
     this.back = back;
     this.isStarted = isStarted;
     this.reviewDay = reviewDay;
+    this.tag = tag;
   }
 }
-
-module.exports = Flashcard;

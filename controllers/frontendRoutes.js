@@ -97,11 +97,11 @@ router.get("/newfc", async (req,res) => {
 // Route to render the new deck screen
 router.get("/newdeck", async (req,res) => {
   try {
-    // if (req.session.userId) {
-    //   res.redirect("/login")
-    // } else {
+    if (!req.session.userId) {
+      res.redirect("/")
+    } else {
       res.render("newdeck", {layout: 'index'})
-    // }  
+    }  
   } catch (err) {
     console.log(err)
     res.status(500).json({ msg: "ERROR", err });
@@ -109,16 +109,15 @@ router.get("/newdeck", async (req,res) => {
 })
 
 // Route to render the deck editor screen
-router.get("/deckedit/:id", async (req,res) => {
+router.get("/deckedit", async (req,res) => {
   try {
-    const deckData = await Deck.findByPk(req.params.id,{
+    const deckData = await Deck.findByPk(req.session.sessDeckId,{
       include: {
         all: true,
         nested: true
       }
     })
     //TODO: add check for deck's profile id matching the session user id
-    console.log(deckData)
     const deck = deckData.get({ plain:true })
     console.log(deck)
     res.render("deckedit", {...deck, layout: 'index'})
