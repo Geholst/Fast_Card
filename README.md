@@ -14,13 +14,11 @@ As 3 UW bootcamp students who have a lot of new content to memorize in such a sh
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+Our app is deployed at https://fast-cards.herokuapp.com/. 
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+A user can go to https://fast-cards.herokuapp.com/ and run through our sample deck to get an idea of how our site works. When you press start you are presented with a flashcard. You can press start on that and you are presented with a front side of a flashcard. If you press flip it will show the back of the flashcard with the answer. There is also a timer ascending for the duration you are practicing a flash card. You can choose how confident you are with that topic by choosing the color coded A,B,C,D. If you chhose A you are the most confident on that subject and it is put in the monthly review. B is semi-confident, and will be put in the weekly review. C is less confident and will be put in the Alternate Days review. D is not confident and is put in the daily review.
 
 
 ## Credits
