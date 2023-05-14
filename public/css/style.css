@@ -67,3 +67,21 @@
   display: flex;
   justify-content: center;
 }
+
+@media screen and (max-width: 940px) {
+#app-title {
+  display: none;
+}
+#sample-deck {
+  margin-top: 20vh;
+}
+#login {
+  margin-top: 20vh;
+}
+#signup {
+  margin-top: 20vh;
+}
+#card-container {
+  margin-top: 20vh;
+}
+}
