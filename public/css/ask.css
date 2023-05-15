@@ -13,13 +13,42 @@
      flex-direction: column;
  }
 
+ #time-label{
+    color: rgb(51, 219, 174);
+    text-shadow: 1px 2px 3px black;
+ }
+ 
+ #card-data {
+     display: flex;
+     flex-direction: column;
+     padding: 5px 20px;
+     color: white;
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 28px;
+ }
+ #gpt-response{
+    width: max-content;
+    border-style: unset;
+    border-radius: 8px;
+    border-color: black;
+    background-color: yellow;
+    font-size: 18px;
+    padding: 5px;
+    align-self: center;
+ }
+
+  #gpt-response:hover{
+    background-color: rgb(225, 144, 31);
+    color: honeydew;
+    cursor: pointer;
+}
+
  label {
      margin: 2px;
      align-self: center;
      font-size: 28px;
      font-weight: bold;
-    color: rgb(51, 219, 174);
-    text-shadow: 1px 2px 3px black;
+     color: honeydew;
  }
 
  #gpt-input {
