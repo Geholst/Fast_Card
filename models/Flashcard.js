@@ -18,18 +18,18 @@ Flashcard.init(
       allowNull: false,
     },
     started: {
-        type: DataTypes.BOOLEAN,
-        defaultValue:false
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
     },
     reviewDay: {
-        type: DataTypes.STRING
-    },
-    tag: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
     },
   },
   {
     sequelize,
+    timestamps: true,
+    underscored: true,
+    modelName: "Flashcard",
   }
 );
 

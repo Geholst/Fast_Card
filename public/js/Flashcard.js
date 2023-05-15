@@ -5,6 +5,5 @@ export class Flashcard {
     this.back = back;
     this.isStarted = isStarted;
     this.reviewDay = reviewDay;
-    this.tag = tag;
   }
 }
