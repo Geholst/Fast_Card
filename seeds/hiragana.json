@@ -1,330 +1,302 @@
 [
   {
-    "name": "Katakana",
+    "name": "Hiragana",
+    "front": "あ",
+    "back": "a",
+    "started": false,
+    "reviewDay": ""
+  },
+  {
+    "name": "Hiragana",
+    "front": "い",
+    "back": "i",
+    "started": false,
+    "reviewDay": ""
+  },
+  {
+    "name": "Hiragana",
+    "front": "う",
+    "back": "u",
+    "started": false,
+    "reviewDay": ""
+  },
+  {
+    "name": "Hiragana",
+    "front": "え",
+    "back": "e",
+    "started": false,
+    "reviewDay": ""
+  },
+  {
+    "name": "Hiragana",
+    "front": "お",
+    "back": "o",
+    "started": false,
+    "reviewDay": ""
+  },
+  {
+    "name": "Hiragana",
     "front": "か",
     "back": "ka",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ア",
-    "back": "a",
-    "started": false,
-    "reviewDay": ""
-  },
-  {
-    "name": "Katakana",
-    "front": "イ",
-    "back": "i",
-    "started": false,
-    "reviewDay": ""
-  },
-  {
-    "name": "Katakana",
-    "front": "ウ",
-    "back": "u",
-    "started": false,
-    "reviewDay": ""
-  },
-  {
-    "name": "Katakana",
-    "front": "エ",
-    "back": "e",
-    "started": false,
-    "reviewDay": ""
-  },
-  {
-    "name": "Katakana",
-    "front": "オ",
-    "back": "o",
-    "started": false,
-    "reviewDay": ""
-  },
-  {
-    "name": "Katakana",
-    "front": "カ",
-    "back": "ka",
-    "started": false,
-    "reviewDay": ""
-  },
-  {
-    "name": "Katakana",
-    "front": "キ",
+    "name": "Hiragana",
+    "front": "き",
     "back": "ki",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ク",
+    "name": "Hiragana",
+    "front": "く",
     "back": "ku",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ケ",
+    "name": "Hiragana",
+    "front": "け",
     "back": "ke",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "コ",
+    "name": "Hiragana",
+    "front": "こ",
     "back": "ko",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "サ",
+    "name": "Hiragana",
+    "front": "さ",
     "back": "sa",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "シ",
+    "name": "Hiragana",
+    "front": "し",
     "back": "shi",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ス",
+    "name": "Hiragana",
+    "front": "す",
     "back": "su",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "セ",
+    "name": "Hiragana",
+    "front": "せ",
     "back": "se",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ソ",
+    "name": "Hiragana",
+    "front": "そ",
     "back": "so",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "タ",
+    "name": "Hiragana",
     "back": "ta",
+    "front": "た",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "チ",
+    "name": "Hiragana",
     "back": "chi",
+    "front": "ち",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ツ",
+    "name": "Hiragana",
     "back": "tsu",
+    "front": "つ",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "テ",
+    "name": "Hiragana",
+    "front": "て",
     "back": "te",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ト",
+    "name": "Hiragana",
+    "front": "と",
     "back": "to",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ナ",
+    "name": "Hiragana",
+    "front": "な",
     "back": "na",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ニ",
+    "name": "Hiragana",
+    "front": "に",
     "back": "ni",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ヌ",
+    "name": "Hiragana",
+    "front": "ぬ",
     "back": "nu",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ネ",
+    "name": "Hiragana",
+    "front": "ね",
     "back": "ne",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ノ",
+    "name": "Hiragana",
+    "front": "の",
     "back": "no",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ハ",
+    "name": "Hiragana",
+    "front": "は",
     "back": "ha",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ヒ",
+    "name": "Hiragana",
+    "front": "ひ",
     "back": "hi",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "フ",
+    "name": "Hiragana",
+    "front": "ふ",
     "back": "fu",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ヘ",
+    "name": "Hiragana",
+    "front": "へ",
     "back": "he",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ホ",
+    "name": "Hiragana",
+    "front": "ほ",
     "back": "ho",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "マ",
+    "name": "Hiragana",
+    "front": "ま",
     "back": "ma",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ミ",
+    "name": "Hiragana",
+    "front": "み",
     "back": "mi",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ム",
+    "name": "Hiragana",
+    "front": "む",
     "back": "mu",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "メ",
+    "name": "Hiragana",
+    "front": "め",
     "back": "me",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "モ",
+    "name": "Hiragana",
+    "front": "も",
     "back": "mo",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ヤ",
+    "name": "Hiragana",
+    "front": "や",
     "back": "ya",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ユ",
+    "name": "Hiragana",
+    "front": "ゆ",
     "back": "yu",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ヨ",
+    "name": "Hiragana",
+    "front": "よ",
     "back": "yo",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ラ",
+    "name": "Hiragana",
+    "front": "ら",
     "back": "ra",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "リ",
+    "name": "Hiragana",
+    "front": "り",
     "back": "ri",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ル",
+    "name": "Hiragana",
+    "front": "る",
     "back": "ru",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "レ",
+    "name": "Hiragana",
+    "front": "れ",
     "back": "re",
     "started": false,
     "reviewDay": ""
   },
   {
-    "name": "Katakana",
-    "front": "ロ",
+    "name": "Hiragana",
+    "front": "ろ",
     "back": "ro",
-    "started": false,
-    "reviewDay": ""
-  },
-  {
-    "name": "Katakana",
-    "front": "ワ",
-    "back": "wa",
-    "started": false,
-    "reviewDay": ""
-  },
-  {
-    "name": "Katakana",
-    "front": "ヲ",
-    "back": "wo",
-    "started": false,
-    "reviewDay": ""
-  },
-  {
-    "name": "Katakana",
-    "front": "ン",
-    "back": "n",
     "started": false,
     "reviewDay": ""
   }

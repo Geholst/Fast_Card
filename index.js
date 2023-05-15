@@ -5,6 +5,14 @@ const routes = require("./controllers");
 const exphbs = require("express-handlebars");
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
+// Configuration gets passed to OpenAIApi constructor
+const { Configuration, OpenAIApi } = require("openai");
+
+// create new config for openai constructor using dotenv to hide key
+const configuration = new Configuration({
+  apiKey: process.env.API_KEY,
+});
+const openai = new OpenAIApi(configuration);
 
 const app = express();
 const PORT = process.env.PORT || 3001;

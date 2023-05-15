@@ -2,6 +2,7 @@ const Flashcard = require("./Flashcard");
 const Deck = require("./Deck");
 const Profile = require("./Profile");
 
+
 Flashcard.belongsTo(Deck);
 Deck.hasMany(Flashcard);
 
