@@ -1,10 +1,14 @@
-<div>
-    <h3>{{name}}</h3>
+<h3>{{name}}</h3>
+<div class="row align-items-center">
     {{#each Flashcards}}
-    <h5>{{name}}</h5>
-    <p>{{front}}</p>
-    <p>{{back}}</p>
-    <button class="del-btn" id="{{id}}">Delete</button>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{name}}</h5>
+                <p class="card-text">{{front}}</p>
+                <p class="card-text">{{back}}</p>
+                <button class="del-btn btn btn-secondary" id="{{id}}">Delete</button>
+            </div>
+        </div>
     {{/each}}
 </div>
 <script src="../js/deckedit.js"></script>

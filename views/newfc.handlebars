@@ -1,13 +1,21 @@
-<div>
+<div class="row">
     <h4>New Flashcard</h4>
+    <div class = col-sm-7>
     <form id="fc-form">
+        <div class="form-group">
         <label for="new-fc-name">Flashcard Name</label>
-        <input type="text" id="new-fc-name">
+        <input type="text" class="form-control"id="new-fc-name">
+        </div>
+        <div class="form-group">
         <label for="new-fc-front">Front of Flashcard</label>
-        <input type="text" id="new-fc-front">
+        <textarea class="form-control" id="new-fc-front" rows="3"></textarea>
+        </div>
+        <div class="form-group">
         <label for="new-fc-back">Back of Flashcard</label>
-        <input type="text" id="new-fc-back">
-        <button type="submit" id="new-fc-btn">Submit</button>
+        <textarea class="form-control" id="new-fc-back" rows="3"></textarea>
+        </div>
+        <button type="submit" id="new-fc-btn" class="btn btn-light">Submit</button>
     </form>
+    </div>
 </div>
 <script src="js/newfc.js"></script>
