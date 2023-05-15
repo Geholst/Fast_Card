@@ -45,14 +45,17 @@ router.get("/dashboard", async (req,res) => {
 })
 
 // Route to render the review screen
-router.get("/review/:id", async (req,res) => {
+router.get("/review", async (req,res) => {
   try {
-    const flashcardsData = await Flashcard.findAll({
-      where:{DeckId:req.params.id}
+    const deckData = await Deck.findByPk(req.session.sessDeckId,{
+      include: {
+        all: true,
+        nested: true
+      }
     })
-    const flashcards = flashcardsData.get({plain: true})
-    console.log(flashcards)
-    return res.render("review", flashcards)
+    const deck = deckData.get({ plain:true })
+    console.log(deck)
+    res.render("review", {...deck, layout: 'index'})
   } catch (err) {
     console.log(err)
     res.status(500).json({ msg: "ERROR", err });
