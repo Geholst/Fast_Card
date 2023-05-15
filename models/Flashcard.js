@@ -19,18 +19,18 @@ Flashcard.init(
     },
     started: {
       type: DataTypes.BOOLEAN,
-      defaultValue: false,
-    },
-    reviewDay: {
-      type: DataTypes.STRING,
-    },
+      defaultValue:false
   },
-  {
-    sequelize,
-    timestamps: true,
-    underscored: true,
-    modelName: "Flashcard",
-  }
+    reviewDay: {
+      type: DataTypes.STRING
+  },
+    tag: {
+    type: DataTypes.INTEGER,
+  },
+},
+{
+  sequelize,
+}
 );
 
 module.exports = Flashcard;
