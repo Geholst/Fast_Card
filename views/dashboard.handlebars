@@ -1,13 +1,18 @@
 <div>
     <h2>{{username}} Dashboard</h2>
     <h3 id="selected-deck">Select a Deck</h3>
-    <button id="edit-btn">Edit</button>
-    <button id="newfc-btn">New Card</button>
-    <button id="review-btn">Review</button>
+    <button id="newdeck-btn" class="btn btn-light">New Deck</button>
+    <button id="newfc-btn" class="btn btn-light">New Card</button>
+    <button id="edit-btn" class="btn btn-light">Edit</button>
+    <button id="review-btn" class="btn btn-light">Review</button>
     {{#each Decks}}
-    <p>{{name}}</p>
-    <button name="{{name}}" id="{{id}}" class="deck-btn">Select</button>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">{{name}}</h4>
+                <button name="{{name}}" id="{{id}}" class="deck-btn btn btn-secondary">Select</button>
+            </div>
+        </div>
     {{/each}}
-    <button id="newdeck-btn">New Deck</button>
+
 </div>
 <script src="./js/dashboard.js"></script>
