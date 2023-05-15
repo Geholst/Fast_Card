@@ -40,3 +40,11 @@ newFcBtn.addEventListener("click", e=>{
     }
     window.location.assign(`/newfc`)
 })
+
+document.querySelector("#review-btn").addEventListener("click", e=>{
+    if(!selectedDeckId){
+        alert("Select a deck in order to Review");
+        return;
+    }
+    window.location.assign(`/review`)
+})
